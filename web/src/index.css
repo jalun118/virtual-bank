@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0 auto 0 auto;
+  overflow-x: hidden;
+}
+
+a,
+button,
+ul > li > a,
+ul li a,
+[type="button"],
+[type="submit"],
+[type="reset"] {
+  @apply cursor-default select-none lg:cursor-pointer;
+}
