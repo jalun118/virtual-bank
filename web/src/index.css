@@ -16,3 +16,68 @@ ul li a,
 [type="reset"] {
   @apply cursor-default select-none lg:cursor-pointer;
 }
+
+a:disabled,
+button:disabled,
+ul > li > a:disabled,
+ul li a:disabled,
+[type="button"]:disabled,
+[type="submit"]:disabled,
+[type="reset"]:disabled,
+input:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+@keyframes backInUp {
+  0% {
+    -webkit-transform: translateY(1200px) scale(0.3);
+    transform: translateY(1200px) scale(0.3);
+    opacity: 0.7;
+  }
+
+  60% {
+    -webkit-transform: translateY(0px) scale(0.3);
+    transform: translateY(0px) scale(0.3);
+    opacity: 0.7;
+  }
+
+  69% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes lightSpeedInLeft {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0) skewX(30deg);
+    transform: translate3d(-100%, 0, 0) skewX(30deg);
+    opacity: 0;
+  }
+
+  50% {
+    -webkit-transform: translate3d(-100%, 0, 0) skewX(30deg);
+    transform: translate3d(-100%, 0, 0) skewX(30deg);
+    opacity: 0;
+  }
+
+  80% {
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    opacity: 1;
+  }
+
+  90% {
+    -webkit-transform: skewX(5deg);
+    transform: skewX(5deg);
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
