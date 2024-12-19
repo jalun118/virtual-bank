@@ -9,7 +9,7 @@ export default function RegisterPage() {
           <Brand />
         </div>
         <form>
-          <h3 className="text-center text-2xl">Register</h3>
+          <h3 className="mt-3 text-center text-2xl font-semibold">Register</h3>
           <div className="mt-3 max-w-sm">
             <label
               htmlFor="username"
@@ -108,7 +108,7 @@ export default function RegisterPage() {
           <div className="mt-3 flex justify-end">
             <button
               type="button"
-              className="inline-flex items-center gap-x-2 rounded-lg border border-transparent bg-blue-600 px-4 py-2.5 font-medium text-white hover:bg-blue-700 focus:bg-blue-700 focus:outline-none disabled:pointer-events-none disabled:opacity-50"
+              className="items-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 font-medium text-white hover:bg-blue-700 focus:bg-blue-700 focus:outline-none disabled:pointer-events-none disabled:opacity-50"
             >
               Register
             </button>
