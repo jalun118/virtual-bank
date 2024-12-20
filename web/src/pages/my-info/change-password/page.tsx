@@ -264,8 +264,8 @@ export default function ChangePasswordPage() {
             <div className="mt-2">
               <p>
                 Do you need help?{" "}
-                <Link to="/" className="font-semibold underline">
-                  Lost Password
+                <Link to="/forgot" className="font-semibold underline">
+                  Forgot Password
                 </Link>
               </p>
             </div>

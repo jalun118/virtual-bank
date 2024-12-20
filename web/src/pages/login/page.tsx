@@ -93,6 +93,12 @@ export default function LoginPage() {
               register
             </Link>
           </p>
+          <p className="mt-2 text-base">
+            Do you need help?{" "}
+            <Link to="/forgot" className="font-semibold underline">
+              Forgot Password
+            </Link>
+          </p>
 
           <div className="mt-3 flex justify-end">
             <button
