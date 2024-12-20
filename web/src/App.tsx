@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Layout from "./layout";
+import ForgotPasswordPage from "./pages/forgot/page";
 import HomePage from "./pages/home/page";
 import LoginPage from "./pages/login/page";
 import MyAccount from "./pages/my-account/page";
@@ -13,6 +14,7 @@ import TopUpPage from "./pages/top-up/page";
 import TransactionDetailPage from "./pages/transaction/detail/page";
 import TransactionPage from "./pages/transaction/page";
 import TransferPage from "./pages/transfer/page";
+import VerifyForgotPasswordPage from "./pages/verify/page";
 
 export default function App() {
   return (
@@ -26,6 +28,8 @@ export default function App() {
           element={<ChangePasswordPage />}
         />
         <Route path="/register" element={<RegisterPage />} />
+        <Route path="/forgot" element={<ForgotPasswordPage />} />
+        <Route path="/verify/:id" element={<VerifyForgotPasswordPage />} />
         <Route path="/my-account" element={<MyAccount />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/transfer" element={<TransferPage />} />
